@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "540670700239",
+    "firebase_url": "https://learningapp-c8803-default-rtdb.firebaseio.com",
+    "project_id": "learningapp-c8803",
+    "storage_bucket": "learningapp-c8803.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540670700239:android:baec75f2a51e37ed0ce5ba",
+        "android_client_info": {
+          "package_name": "com.example.cookbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540670700239-gspkqvo7o7ik947phdui4pc8j3bjppum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9dkVxxqPDDj3sjXNdz0X9bRP-HiPIMWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540670700239-gspkqvo7o7ik947phdui4pc8j3bjppum.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540670700239:android:5549fe557753b0080ce5ba",
+        "android_client_info": {
+          "package_name": "com.example.learningapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540670700239-gspkqvo7o7ik947phdui4pc8j3bjppum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9dkVxxqPDDj3sjXNdz0X9bRP-HiPIMWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540670700239-gspkqvo7o7ik947phdui4pc8j3bjppum.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

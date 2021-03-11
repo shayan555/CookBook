@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RecipeDetails">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/drecipe_name"
+                android:fontFamily="@font/averia_gruesa_libre"
+                android:textColor="@color/purple_500"
+                android:layout_margin="20dp"
+                android:textSize="25dp"
+                android:text="Indian Chicken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:padding="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                  <TextView
+                      android:textSize="18dp"
+                      android:textColor="@color/purple_500"
+                      android:text="Recipe description :"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+
+                  <TextView
+                      android:padding="10dp"
+                      android:layout_gravity="center"
+                      android:id="@+id/drecipe_des"
+                      android:fontFamily="@font/averia_gruesa_libre"
+                      android:textColor="@color/black"
+                      android:textSize="17dp"
+                      android:layout_marginTop="10dp"
+                      android:text="Indian chicken is absolutely decilious,flavor packed,creamy and rich.Indian chicken is absolutely decilious,flavor packed,creamy and rich"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+
+
+              </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="@color/purple_500"
+                        android:text="Recipe Prize :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/drecipe_prize"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/averia_gruesa_libre"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="10dp"
+                        android:text="100 Rupees"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="@color/purple_500"
+                        android:text="Recipe Cooking Time :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/drecipe_time"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/averia_gruesa_libre"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="10dp"
+                        android:text="1 hour"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="@color/purple_500"
+                        android:text="Any Comment :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/drecipe_comment"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/averia_gruesa_libre"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:layout_marginTop="10dp"
+                        android:text="It is very good in tast."
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/note_edittext"
+                android:padding="10dp"
+                android:hint="Add Note"
+                android:layout_margin="20dp"
+                android:background="@drawable/round_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+            <Button
+                android:id="@+id/note_button"
+                android:layout_gravity="center"
+                android:text="Add Note"
+                android:textAllCaps="false"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/averia_gruesa_libre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</RelativeLayout>

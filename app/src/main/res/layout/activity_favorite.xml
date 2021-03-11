@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FavoriteActivity">
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:visibility="invisible"
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:scaleType="centerInside"
+        android:layout_height="match_parent"
+        app:lottie_fileName="emptyanimation.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+
+
+    <TextView
+android:textStyle="bold"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:textSize="30dp"
+        android:textColor="@color/purple_500"
+        android:padding="10dp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite Recipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favorite_recycler"
+        android:layout_below="@id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

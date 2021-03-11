@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <Button
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:id="@+id/login_main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_baseline_login_24"
+        android:drawablePadding="10dp"
+        android:text="login" />
+
+    <Button
+        android:visibility="invisible"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_subdirectory_arrow_left_24"
+        android:layout_alignParentRight="true"
+        android:id="@+id/logout_button"
+        android:text="logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/title"
+        android:layout_below="@id/logout_button"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:textSize="30dp"
+        android:text="Cuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/title"
+        android:id="@+id/cuisine_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_baseline_add_24"
+        android:id="@+id/fab"
+        android:visibility="invisible"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/favoritefab"
+        android:visibility="invisible"
+        android:background="@drawable/round_layout"
+        android:src="@drawable/ic_baseline_favorite_24"
+        android:backgroundTint="@color/purple_500"
+        android:layout_above="@id/fab"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
