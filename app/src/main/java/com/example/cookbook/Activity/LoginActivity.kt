@@ -13,6 +13,7 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
+import java.lang.Exception
 
 
 class LoginActivity : AppCompatActivity() {
@@ -64,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
 
         //if the email and password are not empty
         //displaying a progress dialog
-        progressBar.setMessage("Registering Please Wait...")
+        progressBar.setMessage("Logging Please Wait...")
         progressBar.show()
         mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this,object :OnCompleteListener<AuthResult>{
             override fun onComplete(p0: Task<AuthResult>) {
@@ -76,6 +77,11 @@ class LoginActivity : AppCompatActivity() {
 
                 }
                 progressBar.dismiss()
+            }
+
+        }).addOnFailureListener(object:OnFailureListener{
+            override fun onFailure(p0: Exception) {
+                Toast.makeText(applicationContext,p0.message.toString(),Toast.LENGTH_LONG).show()
             }
 
         })
